@@ -1,0 +1,31 @@
+AXON FRAMEWORK NEDİR?
+
+Axon Framework, karmaşık uygulamaları inşa etmek için tasarlanmış Java tabanlı bir yazılım çerçevesidir. Command Query 
+Responsibility Segregation (CQRS) ve Event Sourcing desenlerini uygulayarak, uygulamaların ölçeklenebilirliğini, 
+esnekliğini ve bakımını kolaylaştırmayı hedefler.
+
+Axon framework domain driven design tekniklerini kullanarak cqrs,saga gibi çözümleri uygulamaya yarayan java based bir 
+microservis frameworküdür.
+
+Axon frameworkünün bir diğer artısı spring ekosistemi ile uyumlu çalışabilen bir framework olmasıdır.
+
+Axon Server Framework yazılımlarımızın haberleşmesi sırasında event bazlı iletişimi kurabildiğimiz bir frameworktür.
+
+Servislerimizin iletişimlerini eventleri handle ederek yönetebilmemizi sağlayan Axon Server Framework CQRS işlemlerimizi
+ kolaylatırmaktadır. Axon Server Framework Command ve Query’lerimizin eventlerini dinleyen bir server ve bu logic’e göre 
+kaydedilmesini sağlamaktadır. Axon Server kendi içerisinde tuttuğu verileri handle ederek logicimize göre projemizi 
+yönlendiriyoruz. CQRS tasarımı aslında karışık bir tasarım olduğu için tek düze bir kullanımı bulunmamaktadır. 
+Servilerimizin içierisinde;
+
+Query Registry
+Command Registry
+Event Handling
+Query Handling
+Event Source
+Aggregite
+olması halinde bir CQRS uygulamış oluyoruz. Axon Server ile rahat bir şekilde servislerimize entegre edebilmekteyiz. Axon Server 
+uygulamaya gelen Query ve Command eventlerini kaydeder. H2 veritabanı kullanır.
+
+
+
+
